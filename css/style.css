@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/***HEADER-SECTION***/
+
+.header-section {
+  height: 55px;
+  width: 100%;
+  padding-top: 15px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0px !important;
+}
+
+.sticky {
+  /*fixalodjon a menu resz*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 80px;
+  color: #304352;
+  letter-spacing: 2px;
+  margin-top: -10px;
+  display: inline-block;
+}
+
+.logo:hover {
+  color: #676a81;
+}
+
+.menu {
+  list-style: none;
+  float: right;
+  margin-right: 60px;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.menu li a:link,
+.menu li a:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a:focus,
+.menu li a:active {
+  color: #222;
+}
+
+.menu li a:focus {
+  position: relative;
+  border-bottom: solid 2px #222;
+}
+
+.menu a {
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+/*MOBIL NAVIGATION*/
+.btn-mobile-nav {
+  border: none;
+  background-color: #fff;
+  color: #777;
+  cursor: pointer;
+  display: none; /*eltunjon a menu is es a mediaval megjelenitsuk*/
+}
+
+.icon-mobile-nav {
+  height: 30px;
+  width: 30px;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none; /*eltunik az X*/
+}
+
+/***HOME-SECTION***/
+
+.home-section {
+  height: 100vh;
+  text-align: center;
+  padding-top: 250px;
+  color: #fff;
+}
+
+.home-section h1 {
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: lighter;
+  letter-spacing: 12px;
+  padding-bottom: 8px;
+  animation: fadeIn-up 0.6s ease-in both;
+}
+
+.home-section p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  animation: fadeIn-up 0.9s ease-in both;
+}
+
+.templatemo {
+  color: #e44c65;
+  text-decoration: none;
+}
+
+.templatemo:hover {
+  color: #e44c65;
+}
+
+.learn-more {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+  background-color: #e44c65;
+  border: 1px solid #e44c65;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  width: 170px;
+  display: inline-block;
+  border-radius: 6px;
+  position: relative;
+  animation: fadeIn-up 1.2s ease-in both;
+}
+
+.learn-more:hover,
+.learn-more:active {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.learn-more:focus {
+  background-color: #4cae4c;
+  border: 1px solid #4cae4c;
+}
+
+@keyframes fadeIn-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.overlay {
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+.bkg {
+  background-position: center;
+  height: 100vh;
+  animation: breath 5s linear infinite;
+  background: url("../images/slide-img1.jpg") center center no-repeat;
+  background: url("../images/slide-img2.jpg") center center no-repeat;
+  position: relative;
+}
+
+.bkg::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: rgba(41, 55, 80, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes breath {
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 140% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+/***ABOUT-SECTION***/
+
+.about-section {
+  height: 1380px;
+  background-color: #f0f0f0;
+  padding-top: 50px;
+}
+
+.about-background {
+  background-color: #ffffff;
+  width: 100%;
+  height: 370px;
+  border-radius: 4px;
+  padding: 100px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+  animation: fadeIn-up2 0.7s ease-in;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.title-background {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 12px;
+  padding-bottom: 8;
+  color: #555;
+  font-weight: 300;
+}
+
+.about-text {
+  color: #888;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 34px;
+}
+
+.img-about {
+  border-radius: 50%;
+  width: 20%;
+  margin-top: 120px;
+  margin-left: -50px;
+  z-index: 99;
+  border: solid 10px #ffffff;
+  padding: 12px;
+  position: absolute;
+  animation: fadeIn-up2 0.9s ease-in;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeIn-up2 {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.title-snapshot {
+  text-transform: uppercase;
+  margin-top: 100px;
+  text-align: center;
+  animation: fadeIn-up2 0.9s ease-in;
+}
+
+.title-snapshot h2 {
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 12px;
+  padding-bottom: 10px;
+  color: #555;
+  font-weight: 300;
+}
+
+.title-snapshot p {
+  color: #888;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 80px;
+  perspective: 100px;
+  width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn-up2 0.9s ease-in;
+}
+
+.carousel__snapper img {
+  border-radius: 50%;
+  text-align: center;
+  margin: 66px;
+  margin-bottom: 96.5px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.profiles-icons-text:hover .carousel-img img {
+  margin-top: -30px; /*emelkedjen a kep*/
+  margin-bottom: 200px;
+  /*padding-bottom: 120px; OSSZEHUZZA HAROMSZOG ALAKURA A KEPET!!! */
+}
+
+.profiles-icons-text:hover .carousel-img p {
+  margin-top: -150px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.carousel-img {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8%;
+  transition: 0.2s;
+  margin-bottom: 40px;
+}
+
+.carousel-img:hover {
+  background-color: #304352;
+}
+
+.carousel-img p {
+  text-transform: uppercase;
+  color: #e44c65;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: -60px;
+  animation: zoomIn 0.6s;
+  transition: 300ms ease-out; /*lassan menjen vissza az iras*/
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.overlay-text {
+  position: absolute;
+  height: 53px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0;
+  margin-left: 40px;
+  margin-top: 320px;
+  color: #f0f0f0;
+  text-align: center;
+  transform: scale(1);
+}
+
+.profiles-icons-text:hover .overlay-text {
+  opacity: 1;
+  animation: zoomIn 0.6s;
+}
+
+.profiles-icons-text {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8%;
+  transition: all 0.2s ease 0s;
+  display: grid;
+}
+
+.profiles-icons-text:hover .carousel-img {
+  background-color: #304352;
+}
+
+/***GALLERY-SECTION***/
+
+.title-gallery {
+  margin-top: 100px;
+  text-align: center;
+  animation: fadeIn-up2 0.9s ease-in;
+}
+
+.title-gallery h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 12px;
+  padding-bottom: 10px;
+  color: #555;
+  font-weight: 300;
+}
+
+.title-gallery p {
+  color: #888;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.gallery-section {
+  margin-left: 200px;
+  margin-bottom: 120px;
+}
+
+.gallery-item {
+  margin-top: 40px;
+  margin-left: 16px;
+  perspective: 1700px;
+  perspective-origin: 0% 50%; /*szethuzza a racsukodo ablakot*/
+}
+
+.overflow {
+  overflow: hidden; /*hogy a kep ne menjen tul*/
+}
+
+.gallery-item img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  /*transform: scale(1.3); /*- felemelkedik a kep a kepen kivulig*/
+  transform: translateX(25%); /*JOBBRA MOZDULJON A KEP*/
+}
+
+.gallery-item:hover .overlay-img {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.overlay-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #304352;
+  height: 100%;
+  transition: 0.5s ease;
+  width: 50%;
+  opacity: 1;
+  transform-origin: 0 50%;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  transform: rotateY(-90deg);
+  position: absolute;
+}
+
+.text h2 {
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 25%;
+  left: 100px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-weight: lighter;
+}
+
+.text p {
+  color: #e44c65;
+  font-size: 16px;
+  position: absolute;
+  top: 185px;
+  left: 135px;
+  letter-spacing: 1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.text button {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: #e44c65;
+  display: inline-block;
+  background: #e44c65;
+  color: #fff;
+  top: 85%;
+  right: 10%;
+  font-weight: lighter;
+  position: absolute;
+}
+
+.gallery-item .overlay-img > div {
+  overflow: hidden;
+}
+
+.gallery-item .overlay-img img {
+  transition: transform 0.4s;
+}
+
+.gallery-item .text {
+  opacity: 1;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+/***CONTACT-SECTION***/
+
+.title-contact {
+  margin-top: 100px;
+  text-align: center;
+  animation: fadeIn-up2 0.9s ease-in;
+}
+
+.title-contact h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 12px;
+  padding-bottom: 15px;
+  color: white;
+  font-weight: 300;
+  padding-top: 140px;
+}
+
+.title-contact p {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 80px;
+  margin: 50px;
+}
+
+@keyframes fadeIn-up3 {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.contact-section {
+  background-color: #304352;
+  height: 850px;
+}
+
+.contact-form {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 2s;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 12px;
+  background: transparent; /*olyan szinu legyen mint a sekcio hattere*/
+  box-shadow: none;
+  transition: all 0.4s ease-in-out;
+  color: #ccc;
+}
+
+.form-control:focus {
+  border-color: #e44c65;
+  background-color: #304352;
+  color: #ffffff;
+}
+
+.form-control:focus,
+.form-control:active {
+  /*a kek keretet a btn-rol leveszi*/
+  outline: none !important;
+  box-shadow: none;
+}
+
+.button-send {
+  background-color: #e44c65;
+  border: #e44c65;
+  color: white;
+  margin-left: 250px;
+  margin-right: auto;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-send:hover {
+  background-color: #333;
+}
+
+/***FOOTER***/
+
+footer {
+  height: 200px;
+  background-color: #304352;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.social-icons li a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.social-icons li a:hover {
+  background: #ffffff;
+  color: #e44c65;
+  transition: all 0.4s ease-in-out;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.templatemo {
+  color: #e44c65;
+}
+
+/*---Back top---*/
+
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba(0, 0, 0, 0.14),
+    1px 1.732px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: all 1s ease;
+  bottom: 50px;
+  right: 50px;
+  color: #222;
+  font-size: 26px;
+  font-weight: lighter;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline;
+}
+
+.go-top:hover {
+  background: #e44c65;
+  color: #ffffff;
+}

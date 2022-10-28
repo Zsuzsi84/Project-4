@@ -1,0 +1,531 @@
+/***BREAKPOINT 1300px***/
+
+@media (max-width: 1300px) {
+  .about-section {
+    height: 1400px;
+  }
+
+  .about-background {
+    height: 400px;
+    padding-top: 70px;
+  }
+
+  .img-about {
+    width: 25%;
+    margin-top: 180px;
+    margin-left: -30px;
+  }
+
+  .carousel__navigation {
+    right: 80px;
+  }
+
+  .gallery-section {
+    margin-left: 150px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+    top: 25%;
+    left: 80px;
+    letter-spacing: 5px;
+  }
+
+  .text p {
+    font-size: 14px;
+    top: 165px;
+    left: 100px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/***BREAKPOINT 1199px***/
+
+@media (max-width: 1199px) {
+  .bkg {
+    height: 115vh;
+  }
+
+  .about-section {
+    height: 1350px;
+  }
+
+  .carousel-img img {
+    width: 55%;
+  }
+
+  .overlay-text {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 270px;
+  }
+
+  .carousel__navigation {
+    right: 260px;
+    bottom: 10px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+    top: 25%;
+    left: 70px;
+    letter-spacing: 5px;
+  }
+
+  .text p {
+    font-size: 12px;
+    top: 135px;
+    left: 85px;
+    letter-spacing: 0.5px;
+  }
+
+  .text button {
+    top: 80%;
+    right: 10%;
+  }
+}
+
+/***BREAKPOINT 991px***/
+@media (max-width: 991px) {
+  .menu {
+    margin-right: 0px;
+  }
+
+  .about-section {
+    height: 1300px;
+  }
+
+  .about-background {
+    height: 470px;
+  }
+
+  .img-about {
+    width: 33%;
+    margin-top: 220px;
+  }
+
+  .carousel-img {
+    height: 95%;
+    width: 104%;
+  }
+
+  .carousel-img img {
+    width: 65%;
+    margin-left: 40px;
+  }
+
+  .overlay-text {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 240px;
+    letter-spacing: 1px;
+  }
+
+  .carousel__navigation {
+    right: 500px;
+    bottom: 60px;
+  }
+
+  .gallery-section {
+    margin-left: 114px;
+  }
+
+  .gallery-item {
+    margin-top: 15px;
+    margin-left: -8px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+    top: 25%;
+    left: 70px;
+    letter-spacing: 5px;
+  }
+
+  .text p {
+    font-size: 10px;
+    top: 110px;
+    left: 65px;
+    letter-spacing: 0px;
+  }
+
+  .text button {
+    top: 75%;
+    right: 10%;
+  }
+
+  .contact-form {
+    width: 700px;
+  }
+
+  .button-send {
+    margin-left: 180px;
+    margin-right: auto;
+  }
+}
+
+/***BREAKPOINT 767px***/
+
+@media (max-width: 767px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  @keyframes breath {
+    0% {
+      background-size: 130% auto;
+    }
+    50% {
+      background-size: 170% auto;
+    }
+    100% {
+      background-size: 130% auto;
+    }
+  }
+
+  .menu {
+    margin-top: -32px;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .home-section {
+    padding-top: 180px;
+  }
+
+  .home-section h1 {
+    letter-spacing: 10px;
+    font-size: 32px;
+  }
+
+  .about-section {
+    height: 2600px;
+  }
+
+  .about-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 360px;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .profiles-icons-text {
+    height: 150%;
+  }
+
+  .img-about {
+    width: 55%;
+    margin: 60px;
+  }
+
+  .carousel {
+    width: 460px;
+  }
+
+  .carousel-img {
+    margin-bottom: 100px;
+  }
+
+  .carousel-img img {
+    width: 55%;
+    margin-left: 90px;
+    margin-bottom: 80px;
+  }
+
+  .overlay-text {
+    margin-left: 90px;
+    margin-top: 270px;
+  }
+
+  .profiles-icons-text {
+    height: 80%;
+  }
+
+  .title-snapshot {
+    margin-top: 500px;
+  }
+
+  .gallery-section {
+    margin-left: -5px;
+    margin-right: 10px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+    top: 25%;
+    left: 85px;
+  }
+
+  .text p {
+    font-size: 16px;
+    top: 170px;
+    left: 110px;
+    letter-spacing: 1px;
+  }
+
+  .text button {
+    top: 83%;
+  }
+
+  .title-contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-form {
+    width: 520px;
+  }
+
+  .button-send {
+    margin-left: 140px;
+  }
+
+  .social-icons {
+    margin-left: -45px;
+  }
+}
+
+/***BREAKPOINT 575px***/
+
+@media (max-width: 575px) {
+  @keyframes breath {
+    0% {
+      background-size: 250% auto;
+    }
+    50% {
+      background-size: 290% auto;
+    }
+    100% {
+      background-size: 250% auto;
+    }
+  }
+
+  .home-section {
+    padding-top: 100px;
+  }
+
+  .home-section h1 {
+    letter-spacing: 8px;
+    font-size: 26px;
+    line-height: 50px;
+  }
+
+  .home-section p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .about-section {
+    height: 85%;
+  }
+
+  .about-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title-background {
+    font-size: 28px;
+    letter-spacing: 8px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .img-about {
+    width: 70%;
+    margin: 12%;
+  }
+
+  .carousel-img {
+    width: 100%;
+  }
+
+  .carousel__snapper img {
+    margin: 25%;
+  }
+
+  .carousel-img p {
+    font-size: 18px;
+  }
+
+  .overlay-text {
+    margin-top: 220px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profiles-icons-text:hover .carousel-img img {
+    margin-top: -55px;
+    margin-bottom: 205px;
+  }
+
+  .title-snapshot {
+    margin-top: 400px;
+  }
+
+  .title-snapshot h2 {
+    font-size: 28px;
+    letter-spacing: 10px;
+  }
+
+  .title-gallery {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+  .title-gallery h2 {
+    font-size: 28px;
+  }
+
+  .title-gallery p {
+    font-size: 18px;
+  }
+
+  .gallery-item {
+    margin-left: 16px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+    top: 25%;
+    left: 60px;
+    letter-spacing: 2px;
+  }
+
+  .text p {
+    font-size: 11px;
+    top: 125px;
+    left: 70px;
+    letter-spacing: 0px;
+  }
+
+  .text button {
+    top: 78%;
+    padding: 1px 6px;
+  }
+
+  .title-contact h2 {
+    font-size: 28px;
+    padding-top: 100px;
+  }
+
+  .title-contact p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .contact-section {
+    height: 965px;
+  }
+
+  .contact-form {
+    width: 280px;
+  }
+
+  .button-send {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons li a {
+    height: 40px;
+    width: 40px;
+  }
+
+  .copyright {
+    font-size: 18px;
+  }
+
+  /*MOBIL NAVIGATION*/
+  .header-menu {
+    max-width: 100%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+
+  .main-nav-list {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 9999;
+    transition: all 0.4s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(55px);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    /*nav-open, mert csak ekkor jelenik meg az X*/
+    display: block !important; /*megjelenik az X*/
+  }
+
+  .menu {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .menu li {
+    flex-direction: column;
+    line-height: 3;
+    display: block;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 14px;
+  }
+
+  .go-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
